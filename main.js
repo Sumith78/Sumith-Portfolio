@@ -95,7 +95,7 @@ const sendEmail = (e) => {
       contactMessage.textContent ='Missing Credentials !!!'
   }else{
       // servicesID - templateID - #form - publicKey
-      emailjs.sendForm('q_adr5qnp','template_2jlk58s','#contact-form','0DhJ7iqIv4f_baVmr')
+      emailjs.sendForm('q_adr5qnp','template_83ys80l','#contact-form','0DhJ7iqIv4f_baVmr')
           .then(()  =>{
             //Show message and add color
             contactMessage.classList.add('color-blue')
@@ -104,7 +104,7 @@ const sendEmail = (e) => {
             //Remove message after five seconds
             setTimeout(() => {
               contactMessage.textContent = ''
-            }, 5000)
+            }, 3000)
           }, (error) =>{
             alert('OOPS! SOMETHING HAS FAILED...', error)
           })
