@@ -79,7 +79,7 @@ const sendEmail = (e) => {
       contactMessage.textContent ='Missing Credentials !!!'
   }else{
       // servicesID - templateID - #form - publicKey
-      emailjs.sendForm('q_adr5qnp','template_83ys80l','#contact-form','0DhJ7iqIv4f_baVmr')
+      emailjs.sendForm('service_adr5qnp','template_83ys80l','#contact-form','0DhJ7iqIv4f_baVmr')
           .then(()  =>{
             //Show message and add color
             contactMessage.classList.add('color-blue')
